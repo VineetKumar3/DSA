@@ -20,7 +20,7 @@ public class CheckSubsetOfArray {
         }
 
         boolean isSubset = true;
-        for(int i =0; i<m ; i++){
+        for(int i = 0; i<m ; i++){
             boolean found = false;
             for(int j = 0; j<n ;j++){
                 if(arr1[j] == arr2[i]){

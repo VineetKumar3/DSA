@@ -23,13 +23,18 @@ public class FirstNonRepeatingArray {
         for(int i = 0; i<n ;i++){
             freq[arr[i]]++;
         }
-        //Step 3 print the element that is 1 occuring first
 
+        //Step 3 print the element that is 1 occuring first
+        boolean found = false;
         for(int j = 0 ; j < n ;j++){
             if(freq[arr[j]] == 1){
                 System.out.print("The first non repeating element in the array is : " + arr[j]);
+                found = true;
                 break;
             }
+        }
+        if(!found){
+            System.out.println("The first non repeating element in the array is not found");
         }
 
     }
